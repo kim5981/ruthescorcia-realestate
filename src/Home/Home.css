@@ -13,3 +13,28 @@
     color: white;
     font-size: 1.4rem;
 }
+
+h1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 8%;
+    font-size: 3rem;
+}
+
+#welcome-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button{
+    font-size: 1.2rem;
+    text-decoration: none;
+   text-transform: uppercase;
+   border: solid 2px white;
+   border-radius: 5px;
+   width: 10%;
+   padding: 1%;
+   margin-left: 8%;
+}

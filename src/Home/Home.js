@@ -13,10 +13,17 @@ export default function Home() {
             <img src={house} alt="icon of a house" className="logo icon"/>
             <h4 className="logo">RUTH ESCORCIA</h4>
         </div>
-        <h1>Welcome to Home Page</h1>
+        
+        <div id="welcome-wrap">
+            <h1>
+                <div>Want to buy or sell a home?</div>
+                <div>I make it easy</div>
+            </h1>
+            <Link to="/contact" className="button">Contact</Link>
+        </div>
         
         <Link to="/home">Home</Link>
-        <Link to="/contact">Contact</Link>
+        
       </>
   );
 }
