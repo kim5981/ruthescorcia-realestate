@@ -1,9 +1,11 @@
-body{
+
+#home-wrap{
     background-image: url("../media/modern-kitchen.jpg");
     background-size: cover;
     background-position: inherit;
     background-repeat: no-repeat;
     color: white;
+    padding-bottom: 8%;
 }
 
 .icon{

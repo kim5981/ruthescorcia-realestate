@@ -1,11 +1,11 @@
 #reviews-wrap{
+    color: black;
     padding: 2%;
-    border: red solid 5px;
-    background-color: aquamarine;
+    background-color: rgb(250, 246, 240);
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-shadow: rgba(0, 0, 0, 0.295) 2px 2px 12px;
+    text-shadow: rgba(0, 0, 0, 0.096) 2px 2px 12px;
 }
 
 .quotes-wrap{
@@ -19,4 +19,5 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
+
 }

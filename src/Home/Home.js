@@ -10,7 +10,7 @@ import logo from "../media/re-logo.png";
 export default function Home() {
   
   return (
-      <>
+      <div id="home-wrap">
         <div id="logo-wrap">
             <img src={logo} alt="icon of a house" className="logo icon"/>
         </div>
@@ -25,6 +25,6 @@ export default function Home() {
         
         {/* <Link to="/home">Home</Link> */}
         {/* <Testimonials/> */}
-      </>
+      </div>
   );
 }
