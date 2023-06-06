@@ -1,4 +1,6 @@
 import React from "react";
+import Listing from "./Listing";
+
 
 export default function ListingsWrapper(){
 
@@ -133,10 +135,25 @@ export default function ListingsWrapper(){
       // 
     
     return (
-        <div id="listings-wrap">
-
+        <>
             <h2>Homes For Sale</h2>
 
-        </div>
+            <div id="listings-wrap">
+
+            {
+                propertyListings.map((l, key) => (
+                     <Listing
+                     price={ l.price }
+                     bedrooms={ l.bedrooms }
+                     bathrooms={ l.bathrooms }
+                    location={ l.location }
+                    images={ l.images }
+                    area={ l.area }
+                    />
+                ))
+            }
+
+            </div>
+        </>
     )
 }
