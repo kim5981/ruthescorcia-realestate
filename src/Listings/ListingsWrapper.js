@@ -1,8 +1,14 @@
 import React from "react";
+import { useLocation, Link } from "react-router-dom";
+
 import Listing from "./Listing";
 import "./Listings.css";
 
 export default function ListingsWrapper(){
+
+    const location = useLocation()
+
+    const showAllListings = location.pathname !== "/listings"
 
     const propertyListings = [
         {
@@ -131,8 +137,14 @@ export default function ListingsWrapper(){
           },
         },
       ];
-      
-      // 
+
+    const listingsToRender = showAllListings 
+    ? propertyListings.slice(0,3)
+    : propertyListings
+
+    function toggleListingView(){
+        console.log("The link worked :)")
+    }
     
     return (
         <div id="listings">
@@ -141,8 +153,9 @@ export default function ListingsWrapper(){
             <div id="listings-wrap">
 
             {
-                propertyListings.map((l, key) => (
+                listingsToRender.map((l, key) => (
                      <Listing
+                     key={ key }
                      price={ l.price }
                      bedrooms={ l.bedrooms }
                      bathrooms={ l.bathrooms }
@@ -154,6 +167,9 @@ export default function ListingsWrapper(){
             }
 
             </div>
+
+            <Link to="/listings" onClick={ toggleListingView }>See More</Link>
+            
         </div>
     )
 }

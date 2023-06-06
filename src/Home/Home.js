@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         
         {/* <Link to="/home">Home</Link> */}
-        {/* <Testimonials/> */}
+    
       </div>
   );
 }
