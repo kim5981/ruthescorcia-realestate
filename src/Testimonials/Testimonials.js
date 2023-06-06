@@ -1,20 +1,25 @@
 import React from "react";
 import "./Testimonials.css";
+import Testimonial from "./Testimonial";
 
 export default function Testimonials() {
-  return (
+  
+    const clients = [
+        "George Hernandez",
+        "Crystal Rodriguez",
+        "Lisa Stevenson"
+    ]
+    return (
     <>
       <div id="reviews-wrap">
         <h2>Client Testimonials</h2>
         <div className="quotes-wrap">
-            
-            <div className="quote">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, 
-                    sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-                    nisi ut aliquid ex ea commodi consequatur.
-                </p>
-            </div>
+
+            {
+            clients.map((client,index) => (
+               <Testimonial key={index} client={client} />
+            ))
+            }
         
         </div>
       </div>
