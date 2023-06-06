@@ -1,5 +1,5 @@
-*{
-  background-color: #cbdadf;
+body{
+  overflow-y: auto;
 }
 
 .App {

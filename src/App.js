@@ -5,10 +5,10 @@ import {
   Route
 } from "react-router-dom";
 
-import Contact from "./Contact/Contact";
-
 import "./App.css";
 
+import Contact from "./Contact/Contact";
+import Testimonials from "./Testimonials/Testimonials";
 import Home from "./Home/Home";
 
 function App() {
@@ -19,11 +19,14 @@ function App() {
       <div className="App">
 
         <Switch>
+          
           <Route exact path="/" component={Home}/> 
           <Route path="/home" component={Home} />
           <Route path="/contact" component={Contact} />
         </Switch>
         </div>
+
+          <Testimonials/>
         </Router>
   );
   

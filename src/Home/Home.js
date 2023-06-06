@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
+import Testimonials from "../Testimonials/Testimonials";
 import "./Home.css";
-import house from "../media/icons8-house-48.png";
+
+
+import logo from "../media/re-logo.png";
 
 export default function Home() {
   
   return (
       <>
         <div id="logo-wrap">
-            <img src={house} alt="icon of a house" className="logo icon"/>
-            <h4 className="logo">RUTH ESCORCIA</h4>
+            <img src={logo} alt="icon of a house" className="logo icon"/>
         </div>
         
         <div id="welcome-wrap">
@@ -19,11 +20,11 @@ export default function Home() {
                 <div>Want to buy or sell a home?</div>
                 <div>I make it easy</div>
             </h1>
-            <Link to="/contact" className="button">Contact</Link>
+            <Link to="/contact" className="button">Contact Me</Link>
         </div>
         
-        <Link to="/home">Home</Link>
-        
+        {/* <Link to="/home">Home</Link> */}
+        {/* <Testimonials/> */}
       </>
   );
 }
