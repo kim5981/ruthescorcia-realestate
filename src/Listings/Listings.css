@@ -1,0 +1,22 @@
+#listings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+#listings-wrap{
+    display: flex;
+    padding: 1%;
+}
+
+#listing{
+    padding: 3%;
+}
+
+.listing-photo{
+    border: solid red 3px;
+    width: 300px;
+    height: 500px;
+}

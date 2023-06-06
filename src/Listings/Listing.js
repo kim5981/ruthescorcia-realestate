@@ -13,10 +13,13 @@ export default function Listing({
 }){
     return (
         <div id="listing">
-            <img src={null} alt="image of property at following address"/>
+            <img className="listing-photo" src={null} alt="image of property at following address"/>
             <h5>{ price }</h5>
             <p>{ location.city }, { location.state }</p>
-            <p> { bedrooms } beds| { bathrooms } baths| { area } sq ft</p>
+            <p>{ area } sq ft</p>
+            <p> { bedrooms } { bedrooms > 1 ? "beds " : "bed " }
+            | { bathrooms } { bathrooms > 1 ? "baths " : "bath "}
+            </p>
         </div>
     )
 }

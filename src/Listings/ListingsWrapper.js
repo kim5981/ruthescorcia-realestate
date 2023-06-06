@@ -1,6 +1,6 @@
 import React from "react";
 import Listing from "./Listing";
-
+import "./Listings.css";
 
 export default function ListingsWrapper(){
 
@@ -135,7 +135,7 @@ export default function ListingsWrapper(){
       // 
     
     return (
-        <>
+        <div id="listings">
             <h2>Homes For Sale</h2>
 
             <div id="listings-wrap">
@@ -154,6 +154,6 @@ export default function ListingsWrapper(){
             }
 
             </div>
-        </>
+        </div>
     )
 }
